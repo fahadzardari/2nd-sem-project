@@ -25,8 +25,8 @@ public class SendMail extends Thread {
     public void run() {
 
         String host = "smtp.gmail.com";
-        final String user = "tumhari mail";// change accordingly
-        final String password = "Tumhara password but password for app wo generate karoge gmail se";// change accordingly
+        final String user = "<YOur mail>";// change accordingly
+        final String password = "<Your password>";// change accordingly
 
         String to = email;// change accordingly
 

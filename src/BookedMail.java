@@ -27,8 +27,8 @@ public class BookedMail extends Thread {
     public void run() {
 
         String host = "smtp.gmail.com";
-        final String user = "fahadzardari222@gmail.com";// change accordingly
-        final String password = "yzelevgevllcnrax";// change accordingly
+        final String user = "<Your mail>";// change accordingly
+        final String password = "<Your password>";// change accordingly
 
         String to = email;// change accordingly
 
