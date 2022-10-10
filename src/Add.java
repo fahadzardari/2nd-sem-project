@@ -209,10 +209,8 @@ public final class Add extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Add().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new Add().setVisible(true);
         });
     }
 

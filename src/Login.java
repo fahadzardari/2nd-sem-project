@@ -107,9 +107,9 @@ public class Login extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
         if ("".equals(jTextField1.getText()) || "".equals(jPasswordField1.getText())) {
-            JOptionPane.showMessageDialog(this, "Hey brev enter something!!");
+            JOptionPane.showMessageDialog(this, "Empty field!!! \n enter something");
         } else {
 
             try {
@@ -129,7 +129,8 @@ public class Login extends javax.swing.JFrame {
             }
 
         }
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }
+    //GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments

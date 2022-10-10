@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package airline.reservation;
+import airline.reservation.Add;
 
 import java.sql.*;
 import java.util.logging.Level;
@@ -140,8 +141,6 @@ public class Admin extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         int row = jTable1.getSelectedRow();
-       // System.out.print(jTable1.getRowSelectionAllowed());
-       // System.out.print(jTable1.getRowCount());
         System.out.print(jTable1.getSelectedRow());
         Flight f = new Flight();
         f.arrival_time = (String) jTable1.getModel().getValueAt(row, 5);
@@ -152,18 +151,16 @@ public class Admin extends javax.swing.JFrame {
         f.plane_id = (Integer) jTable1.getModel().getValueAt(row, 7);
         f.flight_no = (Integer) jTable1.getModel().getValueAt(row , 6);
         f.id =(Integer) jTable1.getModel().getValueAt(row , 0);
-        
         Edit e = new Edit(f);
         e.setVisible(true);
         this.setVisible(false);
-        //String s = jTable1.getModel().getValueAt(row, 0) + "";
-        //JOptionPane.showMessageDialog(null, s);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        dispose();
         this.setVisible(false);
-        Add ad = new Add();
-        ad.setVisible(true);
+        new Add().setVisible(true);
+        
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed

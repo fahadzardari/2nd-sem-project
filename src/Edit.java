@@ -175,7 +175,6 @@ public final class Edit extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        //Flight newf = new Flight();
         f.origin = (String) origin.getSelectedItem();
         f.destination = (String) destination.getSelectedItem();
         f.flight_no = Integer.parseInt((String) flight_no.getSelectedItem()) ;
@@ -188,8 +187,6 @@ public final class Edit extends javax.swing.JFrame {
             Admin ad = new Admin();
             ad.setVisible(true);
         }
-        
-
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**

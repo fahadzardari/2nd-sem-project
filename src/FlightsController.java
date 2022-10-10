@@ -77,12 +77,9 @@ public class FlightsController {
             ps.setInt(6, f.flight_no);
             ps.setInt(7, FleetController.getPlaneId(f.flight_no));
             ps.setInt(8, f.id);
-
             int i = ps.executeUpdate();
             System.out.print(i + " " + f.id);
-
             return true;
-
         } catch (SQLException ex) {
             System.out.print(ex);
             return false;
